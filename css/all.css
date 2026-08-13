@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Zalando Sans', 'Teachers', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
