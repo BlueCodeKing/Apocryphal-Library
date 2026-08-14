@@ -36,49 +36,28 @@ div.content1 div.content1right div.largeMenu div a p {
     font-weight: bold;
 }
 
-/* div.content1 {
-    width: 94vw;
-    height: calc(90vh - 70px);
-    margin: 4vh auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+@media (min-width: 500px) {
+
+    div.content1 div.content1left h1 {
+        font-size: 3em;
+    }
+
+    div.content1 div.content1right div.largeMenu div a p {
+        font-size: 3em;
+        padding: 25px;
+    }
+
 }
 
-div.content1 div.content1left h1 {
-    text-align: center;
-    font-size: 2.5rem;
-}
+@media (min-width: 760px) {
 
-div.content1 div.content1left h2 {
-    text-align: center;
-    font-size: 2rem;
-}
+    div.content1 div.content1left h1 {
+        font-size: 3.3em;
+    }
 
-div.content1 div.content1left p {
-    font-size: 1.5em;
-}
+    div.content1 div.content1right div.largeMenu div a p {
+        font-size: 3.8em;
+        padding: 35px;
+    }
 
-div.content1 div.content1right div.largeMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
 }
-
-div.content1 div.content1right div.largeMenu div {
-    background-image: linear-gradient(blue, darkblue);
-    border-radius: 30px;
-}
-
-div.content1 div.content1right div.largeMenu div a {
-    color: white;
-    text-decoration: none;
-}
-
-div.content1 div.content1right div.largeMenu div a p {
-    text-align: center;
-    font-size: 45px;
-    padding: 26px 0;
-    font-weight: bold;
-} */

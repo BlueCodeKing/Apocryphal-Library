@@ -6,13 +6,24 @@ header {
 header div.logo {
     width: fit-content;
     float: left;
-    font-size: 7px; /* BOOKMARK */
+    font-size: 1.4em;
+}
+
+header .logo span.logo1 {
+    position: absolute;
+    top: -13px;
+    left: 10px;
+}
+
+header .logo span.logo2 {
+    position: absolute;
+    top: 13px;
+    left: 10px;
 }
 
 header .logo a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
     font-weight: bold;
     line-height: 70px;
     padding-left: 20px;
@@ -107,4 +118,13 @@ nav ul li a {
 
 nav ul li:hover, nav ul li.active {
     background-color: blue;
+}
+
+@media (min-width: 500px) {
+
+    header .logo span.logo1, header .logo span.logo2 {
+        position: static;
+        font-size: 1.8em;
+    }
+
 }
