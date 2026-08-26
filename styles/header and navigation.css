@@ -1,0 +1,186 @@
+/* HEADER */
+
+header {
+    height: 70px;
+    background-image: linear-gradient(blue, rgb(0, 0, 190));
+}
+
+/* LOGO */
+
+header div.logo {
+    font-size: 1.55em;
+    font-weight: bold;
+}
+
+header div.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+header div.logo span.headerSpan1 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+header div.logo span.headerSpan2 {
+    position: absolute;
+    top: 34px;
+    left: 10px;
+}
+
+/* HEADER LINKS */
+
+header div.headerLinks {
+    display: none;
+    height: 50px;
+    margin-top: 10px;
+}
+
+header div.headerLinks p {
+    padding: 0 12px;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+header div.headerLinks p.active, header div.headerLinks p:hover {
+    background-color: rgb(0, 0, 110);
+}
+
+/* MENU ICON */
+
+header div.menuIcon {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 40px;
+    justify-content: space-between;
+    float: right;
+    margin: 20px 15px 0 0;
+    cursor: pointer;
+}
+
+header div.menuIcon div {
+    background-color: white;
+    height: 6px;
+    width: 95%;
+    border-radius: 3px;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgb(50, 50, 50);
+    transition: .4s;
+}
+
+/* NAVIGATION CLOSE MENU ICON */
+
+nav div.menuCloseIcon {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+nav div.menuCloseIcon div {
+    background-color: white;
+    height: 6px;
+    width: 38px;
+    border-radius: 4px;
+}
+
+nav div.menuCloseIcon div:first-child {
+    transform: translate(0px, 20px) rotate(45deg);
+    transform-origin: center;
+    
+}
+
+nav div.menuCloseIcon div:last-child {
+    transform: translate(0px, 14px) rotate(-45deg);
+    transform-origin: center;
+}
+
+/* NAVIGATION LINKS */
+
+nav div.navLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0;
+    height: calc(100vh - 160px);
+    justify-content: space-between;
+}
+
+nav div.navLinks p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+nav div.navLinks p a {
+    color: white;
+    text-decoration: none;
+}
+
+nav div.navLinks p a.active {
+    color: dodgerblue;
+}
+
+@media (min-width: 450px) {
+
+    nav {
+        width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        background-color: rgb(50, 50, 50);
+        transition: .4s;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    header div.logo {
+        display: inline-block;
+        margin: 10px 0 0 15px;
+        font-size: 2.5em;
+    }
+
+    header div.logo span.headerSpan1, header div.logo span.headerSpan2 {
+        position: static;
+    }
+
+}
+
+@media (min-width: 1320px) {
+
+    header div.menuIcon {
+        display: none;
+    }
+
+    header div.headerLinks {
+        display: flex;
+        float: right;
+    }
+
+    header div.headerLinks p {
+        margin-right: 20px;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 1.6em;
+
+    }
+
+    header div.headerLinks p a {
+        color: white;
+        text-decoration: none;
+    }
+
+}

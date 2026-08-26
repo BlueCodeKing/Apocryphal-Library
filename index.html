@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- HEAD -->
-
 <head>
 
     <meta charset="UTF-8">
@@ -10,35 +7,32 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/indexHeight.css">
-    <link rel="stylesheet" href="css/footer.css">
-
-    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>Apocryphal Library</title>
 
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/header and navigation.css">
+    <link rel="stylesheet" href="styles/index.css">
+
 </head>
 
-<!-- BODY -->
-
 <body>
-
-    <!-- HEADER -->
-
+    
     <header>
+        
+        <div class="logo"><a href="index.html"><span class="headerSpan1">Apocryphal </span><span class="headerSpan2">Library</span></a></div>
 
-        <!-- LOGO -->
+        <div class="headerLinks">
+            <p class="active"><a href="index.html">Home</a></p>
+            <p><a href="library.html">Library</a></p>
+            <p><a href="encyclopedia.html">Encyclopedia</a></p>
+            <p><a href="dictionary.html">Dictionary</a></p>
+            <p><a href="q&a.html">Q&A</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
 
-        <div class="logo"><a href="index.html"><span class="logo1">Apocryphal</span> <span class="logo2">Library</a></div>
-
-        <!-- MENU ICON-->
-
-        <div class="menuIcon" onclick="toggleMenu()">
+        <div class="menuIcon" onclick="navigationOpen()">
             <div></div>
             <div></div>
             <div></div>
@@ -46,75 +40,63 @@
 
     </header>
 
-    <!-- NAVIGATION -->
+    <nav id="navigation">
 
-        <nav id="navMenu">
+        <!-- <p onclick="navigationClose()" style="color: white">Close</p> -->
 
-            <div class="closeIcon" onclick="closeMenu()">
-                <div></div>
-                <div></div>
+        <div class="menuCloseIcon" onclick="navigationClose()">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="navLinks">
+            <p><a href="index.html" class="active">Home</a></p>
+            <p><a href="library.html">Library</a></p>
+            <p><a href="encyclopedia.html">Encyclopedia</a></p>
+            <p><a href="dictionary.html">Dictionary</a></p>
+            <p><a href="q&a.html">Q&A</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <div class="libraryButton">
+            <a href="library.html">
+                <p class="largeLibraryButtonText">Open Library</p>
+                <p class="smallLibraryButtonText"></p>
+            </a>
+        </div>
+
+        <div class="mainLinks">
+
+            <div class="page1">
+                <h2>For New Users</h2>
+                <p>What's the Apocrypha?</p>
+                <p>How to use this site</p>
             </div>
 
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">Library</a></li>
-                <li><a href="encyclopedia.html">Encyclopedia</a></li>
-                <li><a href="dictionary.html">Dictionary</a></li>
-                <li><a href="q&a.html">Q&A</a></li>
-                <li><a href="studyHelp.html">Study Help</a></li>
-            </ul>
-        </nav>
-    
-        <!-- MAIN CONTENT -->
-
-        <main>
-
-            <div class="content1">
-
-                <div class="content1left">
-
-                    <h1>Welcome to the Apocryphal&nbsp;Library</h1>
-                    
-                    <br>
-
-                    <p>The Apocryphal Library is an ever-growing resource for the Apocrypha and other related writtings. Open up the "Open Library" button on the right to find the text you're looking for!</p>
-
-                    <br>
-
-                    <p>You can also access the side menu by clicking the button in the top right corner.</p>
-
-                </div>
-
-                <div class="content1right">
-
-                    <div class="largeMenu">
-
-                        <div><a href="#"><p>Open Library</p></a></div>
-
-                        <div><a href="#"><p>Encyclopedia</p></a></div>
-
-                        <div><a href="#"><p>Dictionary</p></a></div>
-
-                        <div><a href="#"><p>Q&A</p></a></div>
-
-                        <div><a href="#"><p>Study Help</p></a></div>
-
-                    </div>
-
-                </div>
-
+            <div class="page2">
+                <h2>Popular Texts</h2>
+                <p>1 Enoch</p>
+                <p>Jubilees</p>
             </div>
 
-        </main>
+            <div class="page3">
+                <h2>Features</h2>
+                <p>New Content</p>
+                <p>Support Us</p>
+            </div>
 
-        <footer>
+        </div>
 
-            <p class="copy">&copy;</p>
+    </main>
 
-        </footer>
+    <footer></footer>
 
 </body>
 
-<script src="js/header.js"></script>
+<script src="scripts/header and navigation.js"></script>
 
 </html>

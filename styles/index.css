@@ -1,0 +1,103 @@
+/* LIBRARY BUTTON */
+
+div.libraryButton {
+    border: solid 3px navy;
+    background-color: blue;
+    width: 95%;
+    margin: 15px 2.5%;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.libraryButton:hover {
+    background-color: dodgerblue;
+}
+
+div.libraryButton a {
+    color: white;
+    text-decoration: none;
+}
+
+div.libraryButton p.largeLibraryButtonText {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+div.mainLinks {
+    width: 95%;
+    margin: 15px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+div.page1, div.page2, div.page3 {
+    border-radius: 10px 10px;
+    border: solid 4px navy;
+}
+
+div.mainLinks h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 10px 0 12px;
+}
+
+div.mainLinks p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: blue;
+    border-bottom: solid 3px navy;
+    transition: .4s;
+}
+
+div.mainLinks p:hover {
+    background-color: dodgerblue;
+}
+
+div.mainLinks p:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 900px) {
+
+    div.libraryButton {
+        width: calc(100vw - 20px);
+        margin-left: 10px;
+    }
+
+    div.mainLinks {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: calc(100vw - 20px);
+        margin-left: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    div.libraryButton {
+        width: calc(100vw - 40px);
+        margin-left: 20px;
+    }
+
+    div.mainLinks {
+        gap: 20px;
+        width: calc(100vw - 40px);
+        margin-left: 20px;
+    }
+
+    div.mainLinks h2 {
+        font-size: 2em;
+    }
+
+    div.mainLinks p {
+        font-size: 1.8em;
+    }
+
+}
