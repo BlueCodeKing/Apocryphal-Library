@@ -9,7 +9,10 @@ header {
 
 header div.logo {
     font-size: 1.55em;
+    height: 65px;
+    width: fit-content;
     font-weight: bold;
+    display: inline-block;
 }
 
 header div.logo a {
@@ -18,15 +21,15 @@ header div.logo a {
 }
 
 header div.logo span.headerSpan1 {
-    position: absolute;
+    position: relative;
     top: 5px;
     left: 10px;
 }
 
 header div.logo span.headerSpan2 {
-    position: absolute;
-    top: 34px;
-    left: 10px;
+    position: relative;
+    top: 35px;
+    left: -123px;
 }
 
 /* HEADER LINKS */
