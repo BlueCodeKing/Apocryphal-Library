@@ -34,7 +34,7 @@ div.mainLinks {
 }
 
 div.page1, div.page2, div.page3 {
-    border-radius: 10px 10px;
+    border-radius: 10px;
     border: solid 4px navy;
 }
 
@@ -50,7 +50,7 @@ div.mainLinks p {
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 12px 0 10px;
     background-color: blue;
     border-bottom: solid 3px navy;
     transition: .4s;

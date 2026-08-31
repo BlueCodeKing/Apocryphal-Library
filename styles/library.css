@@ -1,0 +1,90 @@
+div.libraryButton {
+    border: solid 3px navy;
+    background-color: blue;
+    width: 95%;
+    margin: 15px 2.5%;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.libraryButton:hover {
+    background-color: dodgerblue;
+}
+
+div.libraryButton a {
+    color: white;
+    text-decoration: none;
+}
+
+div.libraryButton p.largeLibraryButtonText {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+div.libraryLinks {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 15px 2.5%;
+    display: grid;
+    gap: 20px;
+}
+
+div.libraryLinks a {
+    text-decoration: none;
+}
+
+div.libraryLinks div.categories, div.libraryLinks div.genres {
+    border-radius: 10px;
+    border: solid 4px navy;
+    max-height: min-content;
+}
+
+div.libraryLinks div.categories p, div.libraryLinks div.genres p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px 10px 10px;
+    background-color: blue;
+    transition: .4s;
+}
+
+div.libraryLinks div.categories div, div.libraryLinks div.genres div {
+    border-bottom: solid 4px navy;
+}
+
+div.libraryLinks div.categories div:last-child, div.libraryLinks div.genres div:last-child {
+    border-bottom: none;
+}
+
+div.libraryLinks div.categories p:hover, div.libraryLinks div.genres p:hover {
+    background-color: dodgerblue;
+}
+
+div.libraryLinks div.categories h2, div.libraryLinks div.genres h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 10px 0 12px;
+}
+
+@media (min-width: 600px) {
+
+    div.libraryLinks {
+        grid-template-columns: 1fr 1fr;
+        width: calc(100vw - 40px);
+        margin-left: 20px;
+    }
+
+    div.libraryLinks h2 {
+        font-size: 2em;
+    }
+
+    div.libraryLinks div.categories p, div.libraryLinks div.genres p {
+        font-size: 1.8em;
+    }
+
+}
