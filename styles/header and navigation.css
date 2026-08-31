@@ -115,8 +115,8 @@ nav div.menuCloseIcon div:last-child {
 nav div.navLinks {
     display: flex;
     flex-direction: column;
-    margin: 80px 0 0;
-    height: calc(100dvh - 160px);
+    margin: 90px 0 0;
+    height: calc(100dvh - 180px);
     justify-content: space-between;
 }
 
