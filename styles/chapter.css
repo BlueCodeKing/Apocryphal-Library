@@ -1,0 +1,77 @@
+div.chapter {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 15px 2.5%;
+    display: grid;
+    gap: 20px;
+}
+
+div.chapter a {
+    text-decoration: none;
+}
+
+div.chapter div.allParts {
+    border-radius: 10px;
+    border: solid 4px navy;
+    max-height: min-content;
+}
+
+div.chapter div.allParts p#seeMore {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px 10px 10px;
+    background-color: blue;
+    cursor: pointer;
+    user-select: none;
+}
+
+div.chapter div.allParts input#infoToggle {
+    display: none;
+}
+
+div.chapter div.allParts input#infoToggle:checked ~ div#info {
+    display: block;
+}
+
+div.chapter div.allParts div#info {
+    display: none;
+    color: white;
+    font-size: 1em;
+    padding: 0 10px 10px;
+    background-color: blue;
+}
+
+div.chapter div.allParts p.chapterNumber {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px 10px 10px;
+    background-color: blue;
+    transition: .4s;
+}
+
+div.chapter div.allParts p {
+    color: white;
+    font-size: 1em;
+    padding: 0 10px 10px;
+    background-color: blue;
+}
+
+div.chapter div.allParts div {
+    border-bottom: solid 4px navy;
+}
+
+div.chapter div.allParts div:last-child {
+    border-bottom: none;
+}
+
+div.chapter div.allParts h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 10px 0 12px;
+}

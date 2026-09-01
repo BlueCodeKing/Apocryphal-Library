@@ -1,0 +1,83 @@
+div.textMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 15px 2.5%;
+    display: grid;
+    gap: 20px;
+}
+
+div.textMenu a {
+    text-decoration: none;
+}
+
+div.textMenu div.allParts {
+    border-radius: 10px;
+    border: solid 4px navy;
+    max-height: min-content;
+}
+
+div.textMenu div.allParts p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px 10px 10px;
+    background-color: blue;
+    transition: .4s;
+}
+
+div.textMenu div.allParts div {
+    border-bottom: solid 4px navy;
+}
+
+div.textMenu div.allParts div:last-child {
+    border-bottom: none;
+}
+
+div.textMenu div.allParts p:hover {
+    background-color: dodgerblue;
+}
+
+div.textMenu div.allParts h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 10px 0 12px;
+}
+
+@media (min-width: 600px) {
+
+    div.textMenu div.allParts h2 {
+        font-size: 2em;
+    }
+
+    div.textMenu div.allParts p {
+        font-size: 1.6em;
+    }
+
+}
+
+@media (min-width: 975px) {
+
+    div.textMenu div.allParts h2 {
+        font-size: 2.6em;
+    }
+
+    div.textMenu div.allParts p {
+        font-size: 2em;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    div.textMenu div.allParts h2 {
+        font-size: 3em;
+    }
+
+    div.textMenu div.allParts p {
+        font-size: 2.6em;
+    }
+
+}
