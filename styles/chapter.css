@@ -1,10 +1,19 @@
+div.container {
+    display: grid;
+    grid-template-columns: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    align-items: start;
+}
+
 div.chapter {
     display: grid;
     grid-template-columns: 1fr;
     width: 95%;
     margin: 15px 2.5%;
-    display: grid;
     gap: 20px;
+    --chapter-width: 95vw;
 }
 
 div.chapter a {
@@ -25,7 +34,6 @@ div.chapter div.allParts p#seeMore {
     padding: 12px 10px 10px;
     background-color: blue;
     cursor: pointer;
-    user-select: none;
 }
 
 div.chapter div.allParts input#infoToggle {
@@ -60,7 +68,7 @@ div.chapter div.allParts p.chapterNumber {
 
 div.chapter div.allParts div.verses p {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 0 10px 10px;
     background-color: blue;
 }
@@ -78,4 +86,223 @@ div.chapter div.allParts h2 {
     background-color: navy;
     text-align: center;
     padding: 10px 0 12px;
+}
+
+div.chapter div.nextPrevButtons {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 0;
+}
+
+div.chapter div.nextPrevButtons div {
+    border-radius: 10px;
+    border: solid 4px navy;
+    background-color: blue;
+    text-align: center;
+    padding: 10px 0 12px;
+}
+
+div.chapter div.nextPrevButtons div a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.chapter div.nextPrevButtons div a p {
+    font-size: 1.4em;
+}
+
+div.prevFloatingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: calc((100vw - 1000px) / 2 + 15px);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+div.prevFloatingButton div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 70px;
+    color: white;
+    background-color: blue;
+    border: solid 4px navy;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.prevFloatingButton div:hover, div.nextFloatingButton div:hover {
+    background-color: dodgerblue;
+}
+
+div.prevFloatingButton div a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.prevFloatingButton div a p {
+    font-size: 2.2em;
+    padding: 35px 21px;
+}
+
+div.nextFloatingButton {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: calc((100vw - 1000px) / 2 + 15px);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+div.nextFloatingButton div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 70px;
+    color: white;
+    background-color: blue;
+    border: solid 4px navy;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+div.nextFloatingButton div:hover {
+    background-color: dodgerblue;
+}
+
+div.nextFloatingButton div a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.nextFloatingButton div a p {
+    font-size: 2.2em;
+    padding: 35px 21px;
+}
+
+@media (min-width: 425px) {
+
+    div.chapter div.allParts h2 {
+        font-size: 2em;
+    }
+
+    div.chapter div.allParts p#seeMore {
+        font-size: 1.4em;
+    }
+
+    div.chapter div.allParts div#info p {
+        font-size: 1.2em;
+    }
+
+    div.chapter div.allParts p.chapterNumber {
+        font-size: 1.8em;
+    }
+
+    div.chapter div.allParts div.verses p {
+        font-size: 1.4em;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    div.chapter div.allParts h2 {
+        font-size: 2.3em;
+    }
+
+    div.chapter div.allParts p#seeMore {
+        font-size: 1.8em;
+    }
+
+    div.chapter div.allParts div#info p {
+        font-size: 1.4em;
+    }
+
+    div.chapter div.allParts p.chapterNumber {
+        font-size: 2em;
+    }
+
+    div.chapter div.allParts div.verses p {
+        font-size: 1.6em;
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    div.chapter {
+        width: 800px;
+        margin: 15px auto;
+        --chapter-width: 800px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    div.container {
+        grid-template-columns: 100px 800px 100px;
+        width: 1000px;
+        align-items: start;
+    }
+
+    div.prevFloatingButton div {
+        display: flex;
+    }
+
+    div.chapter {
+        margin: 15px 0 0 100px;
+    }
+
+    div.nextFloatingButton {
+        display: flex;
+    }
+
+    div.prevFloatingButton,
+    div.nextFloatingButton {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+    }
+
+    div.prevFloatingButton {
+        justify-content: flex-start;
+    }
+
+    div.nextFloatingButton {
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1680px) {
+
+    div.container {
+        grid-template-columns: 100px 900px 100px;
+        width: 1100px;
+    }
+
+    div.chapter {
+        width: 900px;
+        --chapter-width: 900px;
+    }
+
+    div.prevFloatingButton {
+        left: calc((100vw - 1100px) / 2 + 15px);
+    }
+
+    div.nextFloatingButton {
+        right: calc((100vw - 1100px) / 2 + 15px);
+    }
 }
