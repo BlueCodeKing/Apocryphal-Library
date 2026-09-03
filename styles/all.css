@@ -16,5 +16,8 @@ body {
     background-size: cover;
     background-clip: content-box;
     background-attachment: fixed;
-    height: 1000dvh;
+}
+
+main {
+    min-height: 100dvh;
 }
