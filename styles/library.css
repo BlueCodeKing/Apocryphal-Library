@@ -4,7 +4,7 @@ div.libraryButton {
     width: 95%;
     margin: 15px 2.5%;
     border-radius: 10px;
-    transition: .6s;
+    transition: .4s;
 }
 
 div.libraryButton:hover {
@@ -73,10 +73,15 @@ div.libraryLinks div.categories h2, div.libraryLinks div.genres h2 {
 
 @media (min-width: 600px) {
 
+    div.libraryButton {
+        width: calc(100vw - 40px);
+        margin: 15px auto;
+    }
+
     div.libraryLinks {
         grid-template-columns: 1fr 1fr;
         width: calc(100vw - 40px);
-        margin-left: 20px;
+        margin: 15px auto;
     }
 
     div.libraryLinks h2 {

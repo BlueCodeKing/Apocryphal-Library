@@ -101,6 +101,11 @@ div.chapter div.nextPrevButtons div {
     background-color: blue;
     text-align: center;
     padding: 10px 0 12px;
+    transition: .4s;
+}
+
+div.chapter div.nextPrevButtons div:hover {
+    background-color: dodgerblue;
 }
 
 div.chapter div.nextPrevButtons div a {
@@ -134,7 +139,7 @@ div.prevFloatingButton div {
     background-color: blue;
     border: solid 4px navy;
     border-radius: 10px;
-    transition: .6s;
+    transition: .4s;
 }
 
 div.prevFloatingButton div:hover, div.nextFloatingButton div:hover {
@@ -173,7 +178,7 @@ div.nextFloatingButton div {
     background-color: blue;
     border: solid 4px navy;
     border-radius: 10px;
-    transition: .6s;
+    transition: .4s;
 }
 
 div.nextFloatingButton div:hover {

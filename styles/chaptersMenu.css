@@ -1,0 +1,97 @@
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    width: 295px;
+    margin: 15px auto;
+}
+
+div.container div {
+    display: flex;
+    border: solid 4px navy;
+    background-color: blue;
+    border-radius: 10px;
+    height: 70px;
+    transition: .4s;
+}
+
+div.container div:hover {
+    background-color: dodgerblue;
+}
+
+div.container div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+div.container div a p {
+    font-size: 1.4em;
+    line-height: 62px;
+    text-align: center;
+}
+
+@media (min-width: 330px) {
+
+    div.container {
+        gap: 10px;
+        width: 310px;
+    }
+
+}
+
+@media (min-width: 410px) {
+
+    div.container {
+        width: 390px;
+    }
+
+    div.container div {
+        height: 90px;
+        width: 90px;
+    }
+
+    div.container div a p {
+        font-size: 1.8em;
+        line-height: 82px;
+    }
+
+}
+
+@media (min-width: 530px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 490px;
+    }
+
+}
+
+@media (min-width: 640px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 590px;
+    }
+
+}
+
+@media (min-width: 740px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 690px;
+    }
+
+}
+
+@media (min-width: 840px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 790px;
+    }
+
+}

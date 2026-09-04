@@ -6,7 +6,7 @@ div.libraryButton {
     width: 95%;
     margin: 15px 2.5%;
     border-radius: 10px;
-    transition: .6s;
+    transition: .4s;
 }
 
 div.libraryButton:hover {
@@ -67,14 +67,14 @@ div.mainLinks p:last-child {
 @media (min-width: 900px) {
 
     div.libraryButton {
-        width: calc(100vw - 20px);
-        margin-left: 10px;
+        width: calc(100vw - 40px);
+        margin: 15px auto;
     }
 
     div.mainLinks {
         grid-template-columns: 1fr 1fr 1fr;
-        width: calc(100vw - 20px);
-        margin-left: 10px;
+        width: calc(100vw - 40px);
+        margin: 15px auto;
     }
 
 }
@@ -83,13 +83,13 @@ div.mainLinks p:last-child {
 
     div.libraryButton {
         width: calc(100vw - 40px);
-        margin-left: 20px;
+        margin: 15px auto;
     }
 
     div.mainLinks {
         gap: 20px;
         width: calc(100vw - 40px);
-        margin-left: 20px;
+        margin: 15px auto;
     }
 
     div.mainLinks h2 {
