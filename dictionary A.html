@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Dictionary A</title>
+
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/header and navigation.css">
+    <link rel="stylesheet" href="styles/dictionaryLetter.css">
+
+    <link rel="icon" href="images/icon.png">
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <div class="logo"><a href="index.html"><span class="headerSpan1">Apocryphal </span><span class="headerSpan2">Library</span></a></div>
+
+        <div class="headerLinks">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="library.html">Library</a></p>
+            <p><a href="encyclopedia.html">Encyclopedia</a></p>
+            <p class="active"><a href="dictionary.html">Dictionary</a></p>
+            <p><a href="q&a.html">Q&A</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+
+        <div class="menuIcon" onclick="navigationOpen()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </header>
+
+    <nav id="navigation">
+
+        <!-- <p onclick="navigationClose()" style="color: white">Close</p> -->
+
+        <div class="menuCloseIcon" onclick="navigationClose()">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="navLinks">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="library.html">Library</a></p>
+            <p><a href="encyclopedia.html">Encyclopedia</a></p>
+            <p><a href="dictionary.html" class="active">Dictionary</a></p>
+            <p><a href="q&a.html">Q&A</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <div class="definitionsContainer">
+
+            <div class="prevFloatingButton">
+                
+                <div><a href="1 Enoch Charles (1917).html"><p>&lt;</p></a></div>
+
+            </div>
+
+            <div class="middleContainer">
+
+                <div class="subContainer">
+
+                    <h2>Ap</h2>
+
+                    <details>
+                        <summary>Apocrypha</summary>
+                        <p class="definition">Details about Apocrypha</p>
+                    </details>
+
+                    <details>
+                        <summary>Apocryphon</summary>
+                        <p class="definition">Details about Apocryphon</p>
+                    </details>
+
+                </div>
+
+            </div>
+
+            <div class="nextFloatingButton">
+                
+                <div><a href="1 Enoch Chapter 2 Charles (1917).html"><p>&gt;</p></a></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+<script src="scripts/generalScripts.js"></script>
+
+</html>
