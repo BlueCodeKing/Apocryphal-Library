@@ -62,8 +62,16 @@ details {
     border-bottom: 4px solid navy;
     border-left: 4px solid navy;
     border-right: 4px solid navy;
-    background-color: blue;
     color: white;
+    background-color: blue;
+}
+
+details[open] {
+    background-color: dodgerblue;
+}
+
+details:last-child {
+    border-radius: 0 0 10px 10px;
 }
 
 summary {
@@ -72,7 +80,7 @@ summary {
     font-size: 1.2em;
     font-weight: bold;
     padding: 12px 15px 10px;
-    transition:  .4s;
+    transition: .4s;
     cursor: pointer;
 }
 
@@ -82,6 +90,10 @@ summary:hover {
 
 summary::-webkit-details-marker {
     display: none;
+}
+
+details hr {
+    margin: 0 15px;
 }
 
 p.definition {
