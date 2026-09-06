@@ -36,6 +36,7 @@ div.mainLinks {
 div.page1, div.page2, div.page3 {
     border-radius: 10px;
     border: solid 4px navy;
+    max-height: fit-content;
 }
 
 div.mainLinks h2 {
@@ -45,23 +46,37 @@ div.mainLinks h2 {
     padding: 10px 0 12px;
 }
 
-div.mainLinks p {
+div.mainLinks div {
+    background-color: blue;
+    border-bottom: solid 4px navy;
+    transition: .4s;
+}
+
+div.mainLinks div a p {
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
     padding: 12px 0 10px;
+}
+
+div.mainLinks div div a {
+    text-decoration: none;
+}
+
+div.mainLinks div {
     background-color: blue;
-    border-bottom: solid 3px navy;
+    border-bottom: solid 4px navy;
     transition: .4s;
 }
 
-div.mainLinks p:hover {
+div.mainLinks div div:hover {
     background-color: dodgerblue;
 }
 
-div.mainLinks p:last-child {
+div.mainLinks div div:last-child {
     border-bottom: none;
+    border-radius: 0 0 5px 5px;
 }
 
 @media (min-width: 900px) {

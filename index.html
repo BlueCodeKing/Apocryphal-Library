@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HEAD -->
+
 <head>
+
+    <!-- METADATA -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT LINKS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>Apocryphal Library</title>
+    <!-- THE TITLE -->
+
+    <title>Apocryphal Library</title> <!-- Don't forget to update this for each page. -->
+
+    <!-- CSS LINKS -->
 
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/header and navigation.css">
     <link rel="stylesheet" href="styles/index.css">
 
+    <!-- THE ICON -->
+
     <link rel="icon" href="images/icon.png">
 
 </head>
 
+<!-- THE BODY -->
+
 <body>
     
+    <!-- HEADER -->
+
     <header>
         
+        <!-- THE LOGO -->
+
         <div class="logo"><a href="index.html"><span class="headerSpan1">Apocryphal </span><span class="headerSpan2">Library</span></a></div>
+
+        <!-- HEADER LINKS -->
 
         <div class="headerLinks">
             <p class="active"><a href="index.html">Home</a></p>
@@ -34,6 +55,8 @@
             <p><a href="about.html">About</a></p>
         </div>
 
+        <!-- MENU ICON -->
+
         <div class="menuIcon" onclick="navigationOpen()">
             <div></div>
             <div></div>
@@ -42,14 +65,18 @@
 
     </header>
 
+    <!-- NAVIGATION -->
+
     <nav id="navigation">
 
-        <!-- <p onclick="navigationClose()" style="color: white">Close</p> -->
+        <!-- CLOSE MENU ICON -->
 
         <div class="menuCloseIcon" onclick="navigationClose()">
             <div></div>
             <div></div>
         </div>
+
+        <!-- NAVIGATION MENU LINKS -->
 
         <div class="navLinks">
             <p><a href="index.html" class="active">Home</a></p>
@@ -62,7 +89,11 @@
 
     </nav>
 
+    <!-- MAIN CONTENT -->
+
     <main>
+
+        <!-- LIBRARY BUTTON -->
 
         <div class="libraryButton">
             <a href="library.html">
@@ -71,33 +102,46 @@
             </a>
         </div>
 
+        <!-- MAIN LINKS -->
+
         <div class="mainLinks">
+
+            <!-- PAGE 1 -->
 
             <div class="page1">
                 <h2>For New Users</h2>
-                <p>What's the Apocrypha?</p>
-                <p>How to use this site</p>
+                <div><a href="#"><p>What's the Apocrypha?</p></a></div>
+                <div><a href="#"><p>How to use this site</p></a></div>
             </div>
+
+            <!-- PAGE 2 -->
 
             <div class="page2">
                 <h2>Popular Texts</h2>
-                <p>1 Enoch</p>
-                <p>Jubilees</p>
+                <div><a href="1 Enoch Charles (1917).html"><p>1 Enoch</p></a></div>
+                <div><a href="#"><p>Jubilees</p></a></div>
+                <div><a href="#"><p>Gospel of Thomas</p></a></div>
             </div>
+
+            <!-- PAGE 3 -->
 
             <div class="page3">
                 <h2>Features</h2>
-                <p>New Content</p>
-                <p>Support Us</p>
+                <div><a href="#"><p>New Content</p></a></div>
+                <div><a href="#"><p>Support Us</p></a></div>
             </div>
 
         </div>
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer></footer>
 
 </body>
+
+<!-- JAVASCRIPT -->
 
 <script src="scripts/generalScripts.js"></script>
 

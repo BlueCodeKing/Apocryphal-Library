@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HEAD -->
+
 <head>
+
+    <!-- METADATA -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT LINKS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>Dictionary A</title>
+    <!-- THE TITLE -->
+
+    <title>Dictionary A</title> <!-- Don't forget to update this for each page. -->
+
+    <!-- CSS LINKS -->
 
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/header and navigation.css">
     <link rel="stylesheet" href="styles/dictionaryLetter.css">
 
+    <!-- THE ICON -->
+
     <link rel="icon" href="images/icon.png">
 
 </head>
 
+<!-- THE BODY -->
+
 <body>
     
+    <!-- HEADER -->
+
     <header>
         
+        <!-- THE LOGO -->
+
         <div class="logo"><a href="index.html"><span class="headerSpan1">Apocryphal </span><span class="headerSpan2">Library</span></a></div>
+
+        <!-- HEADER LINKS -->
 
         <div class="headerLinks">
             <p><a href="index.html">Home</a></p>
@@ -34,6 +55,8 @@
             <p><a href="about.html">About</a></p>
         </div>
 
+        <!-- MENU ICON -->
+
         <div class="menuIcon" onclick="navigationOpen()">
             <div></div>
             <div></div>
@@ -42,14 +65,18 @@
 
     </header>
 
+    <!-- NAVIGATION -->
+
     <nav id="navigation">
 
-        <!-- <p onclick="navigationClose()" style="color: white">Close</p> -->
+        <!-- CLOSE MENU ICON -->
 
         <div class="menuCloseIcon" onclick="navigationClose()">
             <div></div>
             <div></div>
         </div>
+
+        <!-- NAVIGATION MENU LINKS -->
 
         <div class="navLinks">
             <p><a href="index.html">Home</a></p>
@@ -62,9 +89,15 @@
 
     </nav>
 
+    <!-- MAIN CONTENT -->
+
     <main>
 
+        <!-- DEFINITIONS AND BUTTONS CONTAINER -->
+
         <div class="definitionsContainer">
+
+            <!-- LEFT BUTTON -->
 
             <div class="prevFloatingButton">
                 
@@ -72,7 +105,11 @@
 
             </div>
 
+            <!-- MIDDLE CONTAINER -->
+
             <div class="middleContainer">
+
+                <!-- SUBCONTAINER (AP) -->
 
                 <div class="subContainer">
 
@@ -112,7 +149,35 @@
 
                 </div>
 
+                <!-- SUBCONTAINER (AZ) -->
+
+                <div class="subContainer">
+
+                    <h2>Az</h2>
+
+                    <details>
+
+                        <summary><p>Azazel</p></summary>
+
+                        <hr>
+
+                        <p class="definition"><i>noun</i></p>
+
+                        <p class="definition"><b>Definition:</b> A mysterious figure or name associated with the wilderness, the scapegoat ritual, and evil or fallen angels in ancient Jewish literature.</p>
+
+                        <p class="definition">In Leviticus 16, one of two goats used in the Day of Atonement ritual is designated "for Azazel" and sent into the wilderness. The exact meaning of Azazel in this passage has been debated, with interpretations including a supernatural being, a wilderness demon, or a place of removal.
+
+                        <p class="definition">In the Book of 1 Enoch, Azazel is portrayed as one of the fallen angels who corrupts humanity by teaching forbidden knowledge, including the making of weapons and cosmetics. He is ultimately punished and bound until the final judgment.</p>
+
+                        <p class="definition"><b>Related Terms:</b> Apocryphon, Apocryphal, Canon, Pseudepigrapha</p>
+
+                    </details>
+
+                </div>
+
             </div>
+
+            <!-- RIGHT BUTTON -->
 
             <div class="nextFloatingButton">
                 
@@ -124,9 +189,13 @@
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer></footer>
 
 </body>
+
+<!-- JAVASCRIPT -->
 
 <script src="scripts/generalScripts.js"></script>
 
