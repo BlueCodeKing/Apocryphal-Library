@@ -5,6 +5,8 @@ div.definitionsContainer {
     margin: 15px auto 0;
     padding: 0;
     align-items: start;
+    border: 4px solid navy;
+    border-radius: 15px;
 }
 
 div.prevFloatingButton {
@@ -21,6 +23,10 @@ div.prevFloatingButton div {
     border: 4px solid navy;
     border-radius: 10px;
     transition: .4s;
+}
+
+div.prevFloatingButton div a p {
+    padding: 35px 20px;
 }
 
 div.prevFloatingButton div:hover, div.nextFloatingButton div:hover {
@@ -59,11 +65,9 @@ div.subContainer {
 }
 
 details {
-    border-bottom: 4px solid navy;
-    border-left: 4px solid navy;
-    border-right: 4px solid navy;
     color: white;
     background-color: blue;
+    border-bottom: solid 4px navy;
 }
 
 details[open] {
@@ -72,6 +76,7 @@ details[open] {
 
 details:last-child {
     border-radius: 0 0 10px 10px;
+    border-bottom: none;
 }
 
 summary {
@@ -130,11 +135,22 @@ div.nextFloatingButton div a p {
     font-size: 2.2rem;
     color: white;
     margin: 0;
+    padding: 35px 20px;
 }
 
 @media (min-width: 425px) {
 
+    div.middleContainer div.subContainer h2 {
+        font-size: 2em;
+    }
 
+    div.middleContainer div.subContainer summary p {
+        font-size: 1.2em;
+    }
+
+    div.middleContainer div.subContainer p.definition {
+        font-size: 1.1em;
+    }
 
 }
 
