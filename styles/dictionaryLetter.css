@@ -58,6 +58,10 @@ div.definitionsContainer div.middleContainer h2 {
     padding: 10px 0 12px
 }
 
+div.definitionsContainer div.middleContainer div.subContainer:first-child {
+    margin-top: 0;
+}
+
 div.subContainer {
     border-radius: 10px;
     border: 4px solid navy;
