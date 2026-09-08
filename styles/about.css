@@ -1,0 +1,169 @@
+div.container {
+    display: grid;
+    grid-template-columns: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    align-items: start;
+}
+
+div.textBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 15px 2.5%;
+    gap: 20px;
+    --chapter-width: 95vw;
+}
+
+div.textBody a {
+    text-decoration: none;
+}
+
+div.textBody div.allParts {
+    border-radius: 10px;
+    border: solid 4px navy;
+    max-height: min-content;
+}
+
+div.textBody div.allParts div.words p {
+    color: white;
+    font-size: 1.2em;
+    padding: 0 10px 10px;
+    background-color: blue;
+}
+
+div.textBody div.allParts div.words p:first-child {
+    padding-top: 10px;
+}
+
+div.textBody div.allParts div {
+    border-bottom: solid 4px navy;
+}
+
+div.textBody div.allParts div:last-child {
+    border-bottom: none;
+}
+
+div.textBody div.allParts h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 10px 0 12px;
+}
+
+@media (min-width: 425px) {
+
+    div.chapter div.allParts h2 {
+        font-size: 2em;
+    }
+
+    div.chapter div.allParts p#seeMore {
+        font-size: 1.4em;
+    }
+
+    div.chapter div.allParts div#info p {
+        font-size: 1.2em;
+    }
+
+    div.chapter div.allParts p.chapterNumber {
+        font-size: 1.8em;
+    }
+
+    div.chapter div.allParts div.verses p {
+        font-size: 1.4em;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    div.chapter div.allParts h2 {
+        font-size: 2.3em;
+    }
+
+    div.chapter div.allParts p#seeMore {
+        font-size: 1.8em;
+    }
+
+    div.chapter div.allParts div#info p {
+        font-size: 1.4em;
+    }
+
+    div.chapter div.allParts p.chapterNumber {
+        font-size: 2em;
+    }
+
+    div.chapter div.allParts div.verses p {
+        font-size: 1.6em;
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    div.chapter {
+        width: 800px;
+        margin: 15px auto;
+        --chapter-width: 800px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    div.container {
+        grid-template-columns: 100px 800px 100px;
+        width: 1000px;
+        align-items: start;
+    }
+
+    div.prevFloatingButton div {
+        display: flex;
+    }
+
+    div.chapter {
+        margin: 15px 0 0 100px;
+    }
+
+    div.nextFloatingButton {
+        display: flex;
+    }
+
+    div.prevFloatingButton,
+    div.nextFloatingButton {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+    }
+
+    div.prevFloatingButton {
+        justify-content: flex-start;
+    }
+
+    div.nextFloatingButton {
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1680px) {
+
+    div.container {
+        grid-template-columns: 100px 900px 100px;
+        width: 1100px;
+    }
+
+    div.chapter {
+        width: 900px;
+        --chapter-width: 900px;
+    }
+
+    div.prevFloatingButton {
+        left: calc((100vw - 1100px) / 2 + 15px);
+    }
+
+    div.nextFloatingButton {
+        right: calc((100vw - 1100px) / 2 + 15px);
+    }
+}
