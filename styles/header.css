@@ -1,0 +1,56 @@
+/* HEADER */
+
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+/* LOGO */
+
+div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    height: 70px;
+    margin-left: 20px;
+}
+
+div.logo p {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+div.logo p a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MENU ICON */
+
+div.menuIcon {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 30px;
+    width: 37px;
+    top: 20px;
+    right: 20px;
+}
+
+div.menuIcon:hover {
+    cursor: pointer;
+}
+
+div.menuIcon div {
+    background-color: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 3px;
+}
