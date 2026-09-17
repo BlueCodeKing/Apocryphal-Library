@@ -9,5 +9,37 @@ nav {
     z-index: 100;
     max-width: 350px;
     color: white;
-    transition: .4s;
+    transition: right 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
+    opacity: 0.96;
+}
+
+/* X ICON */
+
+div.xIcon {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 20px 20px 0 0;
+    position: relative;
+}
+
+div.xIcon div {
+    background-color: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+div.xIcon div:first-child {
+    transform: rotate(45deg);
+}
+
+div.xIcon div:last-child {
+    transform: rotate(-45deg);
 }
