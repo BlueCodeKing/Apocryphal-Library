@@ -1,7 +1,7 @@
 /* HEADER */
 
 header {
-    background-image: linear-gradient(dodgerblue, blue);
+    background-image: linear-gradient(dodgerblue, rgb(45, 45, 255));
     height: 70px;
     display: flex;
     justify-content: left;
@@ -43,6 +43,16 @@ div.logo p {
 div.logo p a {
     color: white;
     text-decoration: none;
+}
+
+/* HEADER LINKS */
+
+div.headerLinks {
+    display: none;
+}
+
+div.headerLinks a {
+    color: white;
 }
 
 /* MENU ICON */
@@ -100,6 +110,41 @@ div.menuIcon div {
     div.logo p a {
         color: white;
         text-decoration: none;
+    }
+
+}
+
+@media (min-width: 1130px) {
+
+    div.headerLinks {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        height: 70px;
+        column-gap: 15px;
+    }
+
+    div.headerLinks p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 5px 15px;
+        border-radius: 8px;
+        transition: .4s;
+    }
+
+    div.headerLinks p:hover, div.headerLinks p.active {
+        background-color: navy;
+    }
+
+    div.headerLinks a {
+        text-decoration: none;
+    }
+
+    div.menuIcon {
+        display: none;
     }
 
 }
