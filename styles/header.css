@@ -10,6 +10,20 @@ header {
 
 /* LOGO */
 
+span.logoSpan1 {
+    position: absolute;
+    font-size: 25px;
+    top: 5px;
+    left: 12px;
+}
+
+span.logoSpan2 {
+    position: absolute;
+    font-size: 25px;
+    top: 31px;
+    left: 37px;
+}
+
 div.logo {
     display: flex;
     align-items: center;
@@ -53,4 +67,39 @@ div.menuIcon div {
     height: 6px;
     width: 100%;
     border-radius: 3px;
+}
+
+@media (min-width: 425px) {
+
+    span.logoSpan1 {
+        position: static;
+        font-size: 35px;
+    }
+
+    span.logoSpan2 {
+        position: static;
+        font-size: 35px;
+    }
+
+    div.logo {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: fit-content;
+        height: 70px;
+        margin-left: 20px;
+    }
+
+    div.logo p {
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    div.logo p a {
+        color: white;
+        text-decoration: none;
+    }
+
 }
