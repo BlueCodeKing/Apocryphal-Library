@@ -7,10 +7,9 @@ nav {
     width: 100vw;
     height: 100vh;
     z-index: 100;
-    max-width: 350px;
     color: white;
     transition: right 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
-    opacity: 0.89;
+    opacity: 0.9;
 }
 
 /* X ICON */
@@ -74,4 +73,12 @@ div.navLinks a {
     color: white;
     text-decoration: none;
     transition: .4s;
+}
+
+@media (min-width: 700px) {
+
+    nav {
+        max-width: 350px;
+    }
+
 }
