@@ -1,0 +1,80 @@
+div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+}
+
+div.container div {
+    border-radius: 8px;
+    border: solid 4px navy;
+    margin: 10px 0;
+    height:fit-content
+}
+
+div.container div p {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    text-align: center;
+    border-bottom: solid 4px navy;
+}
+
+div.container div p:last-child {
+    border-bottom: none;
+}
+
+div.container div:first-child p:first-child {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div.container div:last-child p:first-child {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div.container div p a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: .4s;
+}
+
+div.container div p a:hover {
+    background-color: dodgerblue;
+}
+
+@media (min-width: 560px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    div.container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 10px 15px;
+    }
+
+    div.container div p {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1840px) {
+
+    div.container div p {
+        font-size: 40px;
+    }
+
+}
