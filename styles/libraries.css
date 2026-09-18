@@ -1,13 +1,15 @@
 div.container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 5px;
+    margin: 5px auto 0 auto;
+    width: 100%;
+    max-width: 1000px;
 }
 
 div.container div {
     border-radius: 8px;
     border: solid 4px navy;
-    margin: 10px 0;
+    margin: 10px 5px 0;
     height: fit-content;
 }
 
@@ -52,8 +54,11 @@ div.container div p a:hover {
 @media (min-width: 560px) {
 
     div.container {
-        grid-template-columns: 1fr 1fr;
         gap: 5px;
+    }
+
+    div.container div {
+        margin: 10px 10px 0 10px;
     }
 
 }
@@ -61,9 +66,7 @@ div.container div p a:hover {
 @media (min-width: 1024px) {
 
     div.container {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        margin: 10px 15px;
+        grid-template-columns: 1fr;
     }
 
     div.container div p {
@@ -71,10 +74,24 @@ div.container div p a:hover {
     }
 }
 
+@media (min-width: 1650px) {
+    
+    div.container div p {
+        font-size: 40px;
+    }
+
+}
+
 @media (min-width: 1840px) {
 
     div.container div p {
-        font-size: 40px;
+        font-size: 60px;
+    }
+
+    div.container {
+        margin: 20px auto 0 auto;
+        width: 100%;
+        max-width: 2000px;
     }
 
 }

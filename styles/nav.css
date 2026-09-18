@@ -58,7 +58,7 @@ div.navLinks {
 
 div.navLinks p {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 div.navLinks p.active a {
@@ -75,10 +75,21 @@ div.navLinks a {
     transition: .4s;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 350px) {
 
     nav {
         max-width: 350px;
+        border-left: solid 4px white;
+    }
+
+}
+
+@media (min-width: 355px) {
+
+    nav {
+        max-width: 340px;
+        border-left: solid 4px white;
+        box-sizing: border-box;
     }
 
 }
