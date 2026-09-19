@@ -29,20 +29,34 @@ div.container div:first-child p:first-child {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 0;
+}
+
+div.container div:first-child p:nth-child(2) {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 div.container div p a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px auto;
+    padding: 10px;
     transition: .4s;
 }
 
 div.container div p:nth-child(2) a {
-    padding: 10px;
+    padding: 0 10px 10px;
+    width: fit-content;
     margin: 0 auto;
+}
+
+div.container div p:nth-child(2) a:hover {
+    background-color: navy;
 }
 
 div.container div p a:hover {
@@ -72,9 +86,9 @@ div.container div p a:hover {
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 25px;
+        font-size: 18px;
     }
-
+    
 }
 
 @media (min-width: 1650px) {
@@ -84,7 +98,7 @@ div.container div p a:hover {
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 35px;
+        font-size: 25px;
     }
 
 }
@@ -99,15 +113,6 @@ div.container div p a:hover {
         margin: 20px auto 0 auto;
         width: 100%;
         max-width: 2000px;
-    }
-
-    div.container div:first-child p:nth-child(2) {
-        font-size: 45px;
-    }
-
-    div.container div p:nth-child(2) a {
-        padding: 20px;
-        margin: 0 auto;
     }
 
 }

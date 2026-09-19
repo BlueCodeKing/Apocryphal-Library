@@ -17,36 +17,83 @@ div.container div p {
     font-size: 20px;
     font-weight: bold;
     background-color: blue;
-    text-align: center;
-    border-bottom: solid 4px navy;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
 }
 
-div.container div p:last-child {
-    border-bottom: none;
-}
-
-div.container div:first-child p:first-child {
+div.container div p:first-child {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 0;
+    border-bottom: solid 4px navy;
+    font-weight: bold;
+}
+
+div.container div p:nth-child(2) {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 div.container div p a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px auto;
+    padding: 10px;
     transition: .4s;
 }
 
 div.container div p:nth-child(2) a {
-    padding: 10px;
+    padding: 0 10px 10px;
+    width: fit-content;
     margin: 0 auto;
+    font-weight: bold;
+}
+
+div.container div p:nth-child(2) a:hover {
+    background-color: navy;
 }
 
 div.container div p a:hover {
     background-color: dodgerblue;
+}
+
+p#moreInfo {
+    color: white;
+    padding: 10px;
+    border-bottom: solid 4px navy;
+    transition: .4s;
+    text-align: center;
+}
+
+p#moreInfo:hover {
+    background-color: dodgerblue;
+}
+
+p#moreInfo {
+    background-color: blue;
+    font-weight: bold;
+}
+
+span#info {
+    display: none;
+    border-bottom: solid 4px navy;
+}
+
+span#info p {
+    color: white;
+    text-align: left;
+    background-color: dodgerblue;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
 }
 
 @media (min-width: 560px) {
@@ -72,7 +119,7 @@ div.container div p a:hover {
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 25px;
+        font-size: 18px;
     }
 
 }
@@ -84,7 +131,7 @@ div.container div p a:hover {
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 35px;
+        font-size: 25px;
     }
 
 }
@@ -99,15 +146,6 @@ div.container div p a:hover {
         margin: 20px auto 0 auto;
         width: 100%;
         max-width: 2000px;
-    }
-
-    div.container div:first-child p:nth-child(2) {
-        font-size: 45px;
-    }
-
-    div.container div p:nth-child(2) a {
-        padding: 20px;
-        margin: 0 auto;
     }
 
 }
