@@ -52,3 +52,27 @@ div.chapterGrid div a p {
     }
 
 }
+
+@media (min-width: 500px) {
+
+    div.chapterGrid {
+        gap: 7px;
+        width: 463px;
+    }
+
+    div.chapterGrid div a p {
+        height: 77px;
+        width: 79px;
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 570px) {
+
+    div.chapterGrid {
+        width: 559px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
