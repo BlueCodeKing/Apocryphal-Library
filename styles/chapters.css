@@ -1,7 +1,7 @@
 div.container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 5px auto 0 auto;
+    margin: 5px auto 20px auto;
     width: 100%;
     max-width: 1000px;
 }
@@ -11,6 +11,7 @@ div.container div {
     border: solid 4px navy;
     margin: 10px 5px 0;
     height: fit-content;
+    box-sizing: border-box;
 }
 
 div.container div p {
@@ -23,7 +24,7 @@ div.container div p {
     font-weight: normal;
 }
 
-div.container div p:first-child {
+div.container > div > p:first-child {
     background-color: navy;
     color: white;
     text-align: center;
@@ -32,7 +33,7 @@ div.container div p:first-child {
     font-weight: bold;
 }
 
-div.container div p:nth-child(2) {
+div.container > div > p:nth-child(2) {
     background-color: navy;
     color: white;
     text-align: center;
@@ -41,7 +42,7 @@ div.container div p:nth-child(2) {
     padding-top: 0;
 }
 
-div.container div p a {
+div.container > div > p a {
     display: block;
     color: white;
     text-decoration: none;
@@ -49,18 +50,18 @@ div.container div p a {
     transition: .4s;
 }
 
-div.container div p:nth-child(2) a {
+div.container > div > p:nth-child(2) a {
     padding: 0 10px 10px;
     width: fit-content;
     margin: 0 auto;
     font-weight: bold;
 }
 
-div.container div p:nth-child(2) a:hover {
+div.container > div > p:nth-child(2) a:hover {
     background-color: navy;
 }
 
-div.container div p a:hover {
+div.container > div > p a:hover {
     background-color: dodgerblue;
 }
 
@@ -79,6 +80,7 @@ p#moreInfo:hover {
 p#moreInfo {
     background-color: blue;
     font-weight: bold;
+    cursor: pointer;
 }
 
 span#info {
@@ -96,14 +98,64 @@ span#info p {
     padding: 10px;
 }
 
+div.bottomChapterGrid {
+    border: none !important;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        "chapterButton1 chapterButton2"
+        "chapterButton3 chapterButton3";
+}
+
+div.bottomChapterGrid div {
+    background-color: blue;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+div.bottomChapterGrid div:last-child {
+    background-color: blue;
+    margin: 0 auto;
+}
+
+div.bottomChapterGrid div.chapterButton1 {
+    background-color: blue;
+    grid-area: chapterButton1;
+}
+
+div.bottomChapterGrid div.chapterButton2 {
+    background-color: blue;
+    grid-area: chapterButton2;
+}
+
+div.bottomChapterGrid div.chapterButton3 { 
+    background-color: blue;
+    grid-area: chapterButton3;
+}
+
+div.bottomChapterGrid div {
+    margin: 0 auto;
+}
+
+div.bottomChapterGrid div a {
+    text-decoration: none;
+}
+
+div.bottomChapterGrid div a p {
+    text-align: center;
+    font-weight: bold;
+    transition: .4s;
+}
+
+div.bottomChapterGrid div a p:hover {
+    background-color: dodgerblue;
+}
+
 @media (min-width: 560px) {
 
     div.container {
         gap: 5px;
-    }
-
-    div.container div {
-        margin: 10px 10px 0 10px;
     }
 
 }
@@ -143,7 +195,7 @@ span#info p {
     }
 
     div.container {
-        margin: 20px auto 0 auto;
+        margin: 20px auto 30px auto;
         width: 100%;
         max-width: 2000px;
     }

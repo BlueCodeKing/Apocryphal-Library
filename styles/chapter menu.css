@@ -1,0 +1,54 @@
+div.chapterGrid {
+    width: 315px;
+    display: grid;
+    gap: 5px;
+    margin: 10px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div.chapterGrid div {
+    background-color: blue;
+    border: solid 4px navy;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+div.chapterGrid div:first-child {
+    grid-column: 1 / -1;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+div.chapterGrid div:hover {
+    background-color: dodgerblue;
+}
+
+div.chapterGrid div a {
+    color: white;
+    text-decoration: none;
+}
+    
+div.chapterGrid div a p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    width: 67px;
+    height: 67px;
+}
+
+@media (min-width: 425px) {
+
+    div.chapterGrid {
+        width: 395px;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
