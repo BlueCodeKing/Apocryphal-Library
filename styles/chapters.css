@@ -37,9 +37,10 @@ div.container > div > p:nth-child(2) {
     background-color: navy;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 0;
     padding-top: 0;
+    font-weight: bold;
 }
 
 div.container > div > p a {
@@ -162,16 +163,16 @@ div.bottomChapterGrid div a p:hover {
 
 @media (min-width: 1024px) {
 
-    div.container {
-        grid-template-columns: 1fr;
-    }
-
     div.container div p {
         font-size: 35px;
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 18px;
+        font-size: 26px;
+    }
+
+    span#info p {
+        font-size: 35px;
     }
 
 }
@@ -183,7 +184,7 @@ div.bottomChapterGrid div a p:hover {
     }
 
     div.container div:first-child p:nth-child(2) {
-        font-size: 25px;
+        font-size: 32px;
     }
 
 }
@@ -191,13 +192,19 @@ div.bottomChapterGrid div a p:hover {
 @media (min-width: 1840px) {
 
     div.container div p {
-        font-size: 60px;
+        font-size: 45px;
+        padding: 15px 25px;
     }
 
     div.container {
         margin: 20px auto 30px auto;
-        width: 100%;
-        max-width: 2000px;
+        width: 75%;
+        max-width: 1680px;
+    }
+
+    span#info p {
+        font-size: 35px;
+        padding: 15px 25px;
     }
 
 }
