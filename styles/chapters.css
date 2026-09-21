@@ -153,6 +153,11 @@ div.bottomChapterGrid div a p:hover {
     background-color: dodgerblue;
 }
 
+div.floatingButtons {
+    border: none !important;
+    display: none;
+}
+
 @media (min-width: 560px) {
 
     div.container {
@@ -177,6 +182,81 @@ div.bottomChapterGrid div a p:hover {
 
 }
 
+@media (min-width: 1300px) {
+
+    div.floatingButtons {
+        display: block;
+    }
+
+    div.floatingButtons div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 110px;
+        width: 70px;
+        background-color: blue;
+        font-weight: bold;
+        transition: .4s;
+    }
+
+    div.floatingButtons div:hover {
+        background-color: dodgerblue;
+    }
+
+    div.floatingButtons div a {
+        text-decoration: none;
+    }
+
+    div.floatingButtons div a p {
+        padding: 20px 17px;
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    div.floatingButtons div a p:hover {
+        background-color: dodgerblue;
+    }
+
+    div.floatingButtons div:first-child {
+        position: fixed;
+        left: calc(10vw - 80px);
+        top: calc(50% - 60px);
+    }
+
+    div.floatingButtons div:last-child {
+        position: fixed;
+        right: calc(10vw - 80px);
+        top: calc(50% - 60px);
+    }
+
+}
+
+@media (min-width: 1385px) {
+
+    div.floatingButtons div:first-child {
+        left: calc(13vw - 80px);
+        top: calc(50% - 60px);
+    }
+
+    div.floatingButtons div:last-child {
+        right: calc(13vw - 80px);
+        top: calc(50% - 60px);
+    }
+
+}
+
+@media (min-width: 1450px) {
+
+    div.floatingButtons div:first-child {
+        left: calc(15vw - 80px);
+    }
+
+    div.floatingButtons div:last-child {
+        right: calc(15vw - 80px);
+    }
+
+}
+
 @media (min-width: 1650px) {
     
     div.container div p {
@@ -185,6 +265,14 @@ div.bottomChapterGrid div a p:hover {
 
     div.container div:first-child p:nth-child(2) {
         font-size: 32px;
+    }
+
+    div.floatingButtons div:first-child {
+        left: calc(19vw - 80px);
+    }
+
+    div.floatingButtons div:last-child {
+        right: calc(19vw - 80px);
     }
 
 }
@@ -205,6 +293,14 @@ div.bottomChapterGrid div a p:hover {
     span#info p {
         font-size: 35px;
         padding: 15px 25px;
+    }
+
+    div.floatingButtons div:first-child {
+        left: calc(12vw - 80px);
+    }
+
+    div.floatingButtons div:last-child {
+        right: calc(12vw - 80px);
     }
 
 }
