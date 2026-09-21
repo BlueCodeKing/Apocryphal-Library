@@ -24,6 +24,10 @@ div.chapterGrid div:first-child {
     padding: 15px 0;
 }
 
+div.chapterGrid div:first-child:hover {
+    background-color: navy;
+}
+
 div.chapterGrid div:hover {
     background-color: dodgerblue;
 }
