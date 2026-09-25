@@ -1,0 +1,22 @@
+/* YOU FINISHED DIV */
+
+main div:first-child {
+    width: 100%;
+    background-color: blue;
+    border: solid 4px navy;
+    color: white;
+    margin: 15px 5px;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+div p.youFinished {
+    text-align: center;
+    font-size: 30px;
+}
+
+div p.whereToNext {
+    text-align: center;
+    font-size: 18px;
+}
+
