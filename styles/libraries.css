@@ -38,9 +38,10 @@ div.container div p a {
     text-decoration: none;
     padding: 10px auto;
     transition: .4s;
+    margin: 0 auto;
 }
 
-div.container div p:nth-child(2) a {
+div.container div p a {
     padding: 10px;
     margin: 0 auto;
 }
@@ -71,20 +72,12 @@ div.container div p a:hover {
         font-size: 35px;
     }
 
-    div.container div:first-child p:nth-child(2) {
-        font-size: 25px;
-    }
-
 }
 
 @media (min-width: 1650px) {
     
     div.container div p {
         font-size: 40px;
-    }
-
-    div.container div:first-child p:nth-child(2) {
-        font-size: 35px;
     }
 
 }
@@ -99,15 +92,6 @@ div.container div p a:hover {
         margin: 20px auto 0 auto;
         width: 100%;
         max-width: 2000px;
-    }
-
-    div.container div:first-child p:nth-child(2) {
-        font-size: 45px;
-    }
-
-    div.container div p:nth-child(2) a {
-        padding: 20px;
-        margin: 0 auto;
     }
 
 }
