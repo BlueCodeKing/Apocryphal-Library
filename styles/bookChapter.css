@@ -54,7 +54,7 @@ div.container div.div2 div:first-child p:last-child {
 div.container div.div2 > p {
     color: white;
     padding: 8px;
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 0;
 }
 
@@ -79,7 +79,23 @@ div.container div.div3 {
     width: 50dvw;
 }
 
+div.container div.div3, div.container div.div1 {
+    transition: .35s;
+}
 
+div.container div.div3 a, div.container div.div1 a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container div.div3:hover, div.container div.div1:hover {
+    background-color: dodgerblue;
+}
+
+p.largeScreen {
+    display: none;
+    font-size: 35px;
+}
 
 @media (min-width: 575px) {
 
@@ -93,6 +109,68 @@ div.container div.div3 {
 
     div.container div.div2 > p {
         font-size: 25px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    div.container div.div1 {
+        position: fixed;
+        bottom: unset;
+        left: max(0px, calc((100vw - 1520px) / 2));
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80px;
+        width: 50px;
+        border-radius: 10px;
+        margin-left: 1.5%;
+        border-right-width: 4px;
+    }
+
+    div.container {
+        width: 85%;
+        margin: 20px auto 75px;
+        max-width: 1360px;
+    }
+
+    div.container div.div3 {
+        position: fixed;
+        bottom: unset;
+        right: max(0px, calc((100vw - 1520px) / 2));
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80px;
+        width: 50px;
+        border-radius: 10px;
+        margin-right: 1.5%;
+        border-left-width: 4px;
+    }
+
+    p.smallScreen {
+        display: none;
+    }
+
+    p.largeScreen {
+        display: inline;
+    }
+
+}
+
+@media (min-width: 1580px) {
+
+    div.container div.div1 {
+        margin-left: 20px;
+        height: 150px;
+        width: 80px;
+        left: max(0px, calc((100vw - 1580px) / 2));
+    }
+    
+    div.container div.div3 {
+        margin-right: 20px;
+        height: 150px;
+        width: 80px;
+        right: max(0px, calc((100vw - 1580px) / 2));
     }
 
 }
