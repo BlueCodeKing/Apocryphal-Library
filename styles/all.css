@@ -1,12 +1,13 @@
 * {
-    overflow-x: hidden;
-    padding: 0;
     margin: 0;
-    font-family: Roboto, "Open Sans", "Google Sans", sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: roboto, "Google Sans", "Open Sans", sans-serif;
 }
 
 body {
     background-image: url("../images/background1.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }

@@ -5,56 +5,54 @@
 
 <head>
 
+    <!-- META TAGS-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/all.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/footer.css">
-
-    <link rel="icon" href="images/icon.png">
+    <!-- GOOGLE FONTS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/headerAndNav.css">
+    <link rel="stylesheet" href="styles/index.css"> <!-- change this on each page. -->
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="images/icon.png">
+
+    <!-- TITLE-->
+
     <title>Apocryphal Library</title>
 
 </head>
 
-<!-- BODY -->
+<!-- BODY-->
 
 <body>
-    
+
     <!-- HEADER -->
 
     <header>
 
-        <!-- LOGO -->
+        <div class="logo"><a href="index.html"><span class="logo1">Apocryphal</span> <span class="logo2">Library</span></a></div>
 
-        <div class="logo">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="library/index.html">Library</a></li>
+            <li><a href="dictionary/index.html">Dictionary</a></li>
+            <li><a href="q&a/index.html">Q&A</a></li>
+            <li><a href="studyHelp/index.html">Study Help</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
 
-            <p><a href="index.html"><span class="logoSpan1">Apocryphal</span> <span class="logoSpan2">Library</span></a></p>
-
-        </div>
-
-        <!-- HEADER LINKS -->
-
-        <div class="headerLinks">
-
-            <p class="active"><a href="index.html">Library</a></p>
-            <p><a href="Q&A.html">Q&A</a></p>
-            <p><a href="dictionary.html">Dictionary</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="help.html">Help</a></p>
-
-        </div>
-
-        <!-- MENU ICON -->
-
-        <div class="menuIcon" onclick="openMenu()">
+        <div class="openMenuIcon" onclick="openMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -64,56 +62,86 @@
 
     <!-- NAVIGATION -->
 
-    <nav id="navigation">
+    <nav id="navMenu">
 
-        <!-- X ICON -->
-
-        <div class="xIcon" onclick="closeMenu()">
+        <div class="closeMenuIcon" onclick="closeMenu()">
             <div></div>
             <div></div>
         </div>
 
-        <!-- NAVIGATION LINKS -->
+        <div class="menuLinks">
 
-        <div class="navLinks">
-
-            <p class="active"><a href="index.html">Library</a></p>
-            <p><a href="Q&A.html">Q&A</a></p>
-            <p><a href="dictionary.html">Dictionary</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="help.html">Help</a></p>
+            <a href="index.html" class="active">Home</a>
+            <a href="library/index.html">Library</a>
+            <a href="dictionary/index.html">Dictionary</a>
+            <a href="q&a/index.html">Q&A</a>
+            <a href="studyHelp/.html">Study Help</a>
+            <a href="helpIndex.html">Help</a>
 
         </div>
 
     </nav>
 
-    <!-- MAIN -->
+    <!-- MAIN CONTENT-->
 
     <main>
 
-        <!-- CONTAINER -->
+        <div class="container1">
 
-        <div class="container">
+            <a href="library/index.html">
+
+                <div class="mainContent">
+
+                    <p>Open Library</p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="linkButtons">
 
             <div>
-                <p>Sort by Category</p>
-                <p><a href="all library.html">All</a></p>
-                <p><a href="apocrypha library.html">Apocrypha</a></p>
-                <p><a href="pseudepigrapha library.html">Pseudepigrapha</a></p>
+                <a href="library/index.html">
+                    <p>Library</p>
+                    <p>The Apocryphal Texts</p>
+                </a>
             </div>
 
             <div>
-                <p>Sort by Genre</p>
-                <p><a href="all library.html">All</a></p>
-                <p><a href="wisdom library.html">Wisdom</a></p>
-                <p><a href="historical.html">Historical</a></p>
+                <a href="dictionary/index.html">
+                    <p>Dictionary</p>
+                    <p>Definitions of Terms</p>
+                </a>
+            </div>
+            <div>
+                <a href="q&a/index.html">
+                    <p>Q&A</p>
+                    <p>Questions and Answers</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="studyHelp/index.html">
+                    <p>Study Help</p>
+                    <p>Help with Studies</p>
+                </a>
             </div>
 
         </div>
 
     </main>
 
-    <script src="scripts/index.js"></script>
+    <!-- FOOTER -->
+
+    <footer>
+
+
+
+    </footer>
+
+    <script src="scripts/main.js"></script>
 
 </body>
 

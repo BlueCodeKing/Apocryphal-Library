@@ -1,0 +1,68 @@
+div.container {
+    width: 90%;
+    margin: 20px auto;
+    border: solid 4px navy;
+    border-radius: 14px;
+    max-width: 1200px;
+}
+
+div.container div:first-child {
+    background-color: navy;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.container div:first-child:hover {
+    background-color: navy;
+}
+
+div.container div:first-child a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container div:first-child p {
+    font-size: 20px;
+}
+
+div.container div {
+    background-color: blue;
+    border-bottom: solid 4px navy;
+    transition: .35s;
+}
+
+div.container div:hover {
+    background-color: dodgerblue;
+}
+
+div.container div:last-child {
+    border-bottom: none;
+}
+
+div.container div a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.container div a p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 575px) {
+
+    div.container div:first-child p {
+        font-size: 30px;
+    }
+
+    div.container div a p {
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,121 @@
+div.container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1360px;
+}
+
+div.container div.div1 {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    border: solid navy 4px;
+    border-right-width: 2.5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 50dvw;
+}
+
+div.container div.div2 {
+    background-color: blue;
+    border-radius: 14px;
+    border: solid 4px navy;
+}
+
+div.container div.div2 div:first-child {
+    background-color: navy;
+}
+
+div.container div.div2 div:first-child a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container div.div2 div:first-child p:first-child {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+div.container div.div2 div:first-child p:last-child {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0 10px;
+    margin-bottom: 4px;
+}
+
+div.container div.div2 > p {
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    padding-bottom: 0;
+}
+
+div.container div.div2 > p:last-child {
+    margin-bottom: 12px;
+}
+
+div.container div.div3 {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    border: solid navy 4px;
+    border-left-width: 2.5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 55px;
+    width: 50dvw;
+}
+
+
+
+@media (min-width: 575px) {
+
+    div.container div.div2 div:first-child p:first-child {
+        font-size: 30px;
+    }
+
+    div.container div.div2 div:first-child p:last-child {
+        font-size: 20px;
+    }
+
+    div.container div.div2 > p {
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    
+    div.container div.div2 div:first-child p:first-child {
+        font-size: 50px;
+    }
+
+    div.container div.div2 div:first-child p:last-child {
+        font-size: 30px;
+    }
+
+    
+
+    div.container div.div2 > p {
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    div.container div.div2 > p:last-child {
+        margin-bottom: 7.5px;
+    }
+
+}

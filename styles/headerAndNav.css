@@ -1,0 +1,178 @@
+header {
+    background-image: linear-gradient(dodgerblue, blue);
+    height: 70px;
+}
+
+/* LOGO */
+
+header div.logo {
+    display: inline-block;
+}
+
+header span.logo1 {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header span.logo2 {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER LINKS */
+
+header ul {
+    height: 68px;
+    float: right;
+    display: none;
+    flex-direction: row;
+    margin-top: 1px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+header ul li {
+    text-decoration: none;
+    float: right;
+    margin: 0 5px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    transition: .35s;
+}
+
+header ul li a.active, header ul li a:hover {
+    background-color: rgb(0, 0, 80);
+}
+
+/* OPEN MENU ICON */
+
+header div.openMenuIcon {
+    margin: 20px 20px 0 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 35px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header div.openMenuIcon div {
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+/* NAVIGATION MENU */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 100vw;
+    height: 100dvh;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    z-index: 100;
+}
+
+nav.open {
+    transform: translateX(0);
+}
+
+nav div.closeMenuIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 35px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav div.closeMenuIcon div {
+    position: absolute;
+    top: 12px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+nav div.closeMenuIcon div:first-child {
+    transform: rotate(45deg);
+}
+
+nav div.closeMenuIcon div:last-child {
+    transform: rotate(-45deg);
+}
+
+/* MENU LINKS */
+
+nav div.menuLinks {
+    margin-top: 80px;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div.menuLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+nav div.menuLinks a:hover, nav div.menuLinks a.active {
+    color: dodgerblue;
+}
+
+@media (min-width: 768px) {
+    
+    nav {
+        width: 350px;
+        transition: .35s;
+    }
+
+}
+
+@media (min-width: 980px) {
+
+    header ul {
+        display: flex;
+    }
+
+    header div.openMenuIcon {
+        display: none;
+    }
+
+}
