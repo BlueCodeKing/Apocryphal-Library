@@ -66,3 +66,11 @@ div.container div a p {
     }
 
 }
+
+@media (min-width: 1800px) {
+
+    div.container div:first-child p {
+        font-size: 50px;
+    }
+
+}
