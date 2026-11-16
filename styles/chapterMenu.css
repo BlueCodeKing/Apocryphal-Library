@@ -1,10 +1,12 @@
-/* HEADER */
+/* WHOLE CONTAINER */
 
 div.container {
     width: 90dvw;
     margin: 20px auto 75px;
     max-width: 1360px;
 }
+
+/* HEADER */
 
 div.container div.header {
     background-color: navy;

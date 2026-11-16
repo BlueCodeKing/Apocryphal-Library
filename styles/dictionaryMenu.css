@@ -1,0 +1,130 @@
+/* WHOLE CONTAINER */
+
+div.container {
+    width: 90dvw;
+    margin: 20px auto 75px;
+    max-width: 1360px;
+}
+
+/* HEADER */
+
+div.container div.header {
+    background-color: navy;
+    border-radius: 14px;
+}
+
+div.container div.header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+div.container div.header p a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CHAPTERS */
+
+div.chaptersMenu {
+    display: grid;
+    width: 90dvw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+div.chapter a {
+    color: white;
+    text-decoration: none;
+}
+
+div.chapter a p {
+    display: flex;
+    background-color: blue;
+    border: solid 4px navy;
+    border-radius: 14px;
+    justify-content: center;
+    height: calc((90dvw - 47px) / 4);
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    transition: .35s;
+}
+
+div.chapter a p:hover {
+    background-color: dodgerblue;
+}
+
+@media (min-width: 450px) {
+
+    div.chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div.chapter a p {
+        height: calc((90dvw - 59.95px) / 5);
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 575px) {
+
+    div.container div.header p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    div.chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div.chapter a p {
+        height: calc((90dvw - 73px) / 6);
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 750px) {
+
+    div.chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div.chapter a p {
+        height: calc((90dvw - 86px) / 7);
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    div.chaptersMenu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 1360px;
+    }
+
+    div.chapter a p {
+        height: calc((90dvw - 99px) / 8);
+        max-height: calc((1360px - 86px) / 8);
+        max-width: calc((1360px - 86px) / 8);
+        font-size: 45px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    div.container div.header p {
+        font-size: 50px;
+    }
+
+}
