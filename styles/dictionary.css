@@ -6,6 +6,25 @@ div.container {
     max-width: 1360px;
 }
 
+/* LEFT ARROW */
+
+div.container div.div1 {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    border: solid navy 4px;
+    border-right-width: 2.5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 50dvw;
+}
+
 /* HEADER */
 
 div.container div.header {
@@ -26,9 +45,14 @@ div.container div.header p a {
     text-decoration: none;
 }
 
+div.container div.definitionsBlock {
+    border: solid 4px navy;
+    border-radius: 18px;
+}
+
 div.container p.moreInfoTitle {
     background-color: blue;
-    border: solid 4px navy;
+    border-bottom: solid 4px navy;
     border-top: none;
     text-align: left;
     color: white;
@@ -58,13 +82,86 @@ div.container div.moreInfo:last-child p.moreInfoTitle {
     border-radius: 0 0 14px 14px;
 }
 
+div.container div.moreInfo:last-child p.moreInfoTitle:not(.active) {
+    border-bottom: none;
+}
+
+div.container div.moreInfo:last-child div.hiddenInfo {
+    border-radius: 0 0 14px 14px;
+}
+
+div.container div.moreInfo div.hiddenInfo {
+    padding: 4px 0;
+}
+
+div.container div.moreInfo div.hiddenInfo p {
+    color: white;
+    padding: 4px 8px;
+}
+
 div.container div.moreInfo:last-child p.moreInfoTitle.active {
     border-radius: 0;
 }
 
-div.hiddenInfo {
+div.container div.hiddenInfo {
     display: none;
-    border: solid 4px navy;
+    border-bottom: solid 4px navy;
     border-top: none;
     background-color: dodgerblue;
+}
+
+div.container div.moreInfo:last-child div.hiddenInfo {
+    border-bottom: none;
+}
+
+/* RIGHT ARROW */
+
+div.container div.div3 {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    border: solid navy 4px;
+    border-left-width: 2.5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 55px;
+    width: 50dvw;
+}
+
+/* BOTH ARROWS */
+
+div.container div.div3, div.container div.div1 {
+    transition: .35s;
+}
+
+div.container div.div3 a, div.container div.div1 a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container div.div3:hover, div.container div.div1:hover {
+    background-color: dodgerblue;
+}
+
+p.largeScreen {
+    display: none;
+    font-size: 35px;
+}
+
+div.container div.div1 a, div.container div.div3 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 72px;
+}
+
+div.container div.div1 a, div.container div.div3 a {
+    width: 100%;
+    height: 42px;
 }
