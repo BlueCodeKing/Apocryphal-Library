@@ -51,6 +51,38 @@ div.container div.div2 div:first-child p:last-child {
     margin-bottom: 4px;
 }
 
+div.container div.moreInfo {
+    border-bottom: solid 4px navy;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    transition: .35s;
+    cursor: pointer;
+}
+
+div.container div.moreInfo:hover {
+    background-color: dodgerblue;
+}
+
+div.container div.moreInfo p {
+    padding: 10px;
+}
+
+div.container div.moreInfo div {
+    border-top: solid 4px navy;
+    display: none;
+}
+
+div.container div#hiddenInfo {
+    background-color: dodgerblue;
+    text-align: left;
+}
+
+div.container div#hiddenInfo {
+    font-size: 20px;
+}
+
 div.container div.div2 > p {
     color: white;
     padding: 8px;
@@ -120,8 +152,20 @@ div.container div.div1 a, div.container div.div3 a {
         font-size: 20px;
     }
 
+    div.container div#hiddenInfo {
+        font-size: 25px;
+    }
+
     div.container div.div2 > p {
         font-size: 25px;
+    }
+
+}
+
+@media (min-width: 700px) {
+
+    div.container div.moreInfo {
+        font-size: 22px;
     }
 
 }
@@ -166,6 +210,14 @@ div.container div.div1 a, div.container div.div3 a {
 
     p.largeScreen {
         display: inline;
+    }
+
+}
+
+@media (min-width: 1250px) {
+
+    div.container div.moreInfo {
+        font-size: 30px;
     }
 
 }
@@ -220,7 +272,9 @@ div.container div.div1 a, div.container div.div3 a {
         font-size: 30px;
     }
 
-    
+    div.container div#hiddenInfo {
+        font-size: 35px;
+    }
 
     div.container div.div2 > p {
         font-size: 35px;

@@ -1,0 +1,70 @@
+/* WHOLE CONTAINER */
+
+div.container {
+    width: 90%;
+    margin: 20px auto 75px;
+    max-width: 1360px;
+}
+
+/* HEADER */
+
+div.container div.header {
+    background-color: navy;
+    border-radius: 14px 14px 0 0;
+}
+
+div.container div.header p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px;
+}
+
+div.container div.header p a {
+    color: white;
+    text-decoration: none;
+}
+
+div.container p.moreInfoTitle {
+    background-color: blue;
+    border: solid 4px navy;
+    border-top: none;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px;
+    transition: background-color .35s;
+}
+
+div.container p.moreInfoTitle:hover {
+    background-color: dodgerblue;
+}
+
+div.container p.moreInfoTitle.active {
+    background-color: dodgerblue;
+}
+
+div.container p.moreInfoTitle p {
+    background-color: blue;
+}
+
+div.container div.moreInfo:last-child {
+    border-radius: 0 0 14px 14px;
+}
+
+div.container div.moreInfo:last-child p.moreInfoTitle {
+    border-radius: 0 0 14px 14px;
+}
+
+div.container div.moreInfo:last-child p.moreInfoTitle.active {
+    border-radius: 0;
+}
+
+div.hiddenInfo {
+    display: none;
+    border: solid 4px navy;
+    border-top: none;
+    background-color: dodgerblue;
+}
