@@ -1,0 +1,89 @@
+div.qaContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 75px;
+    border: solid 4px navy;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+div.qaHeading {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 14px;
+}
+
+div.qaHeading h1 {
+    font-size: 22px;
+}
+
+div.qaHeading p {
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+nav.qaCategories {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    transition: none;
+    z-index: auto;
+    background-color: blue;
+}
+
+nav.qaCategories a.qaCategoryLink {
+    display: block;
+    color: white;
+    border-bottom: solid 4px navy;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .35s;
+}
+
+nav.qaCategories a.qaCategoryLink:last-child {
+    border-bottom: none;
+}
+
+nav.qaCategories a.qaCategoryLink:hover,
+nav.qaCategories a.qaCategoryLink:focus-visible {
+    background-color: dodgerblue;
+}
+
+nav.qaCategories a.qaCategoryLink:focus-visible {
+    outline: solid 3px white;
+    outline-offset: -5px;
+}
+
+@media (min-width: 575px) {
+
+    div.qaHeading h1 {
+        font-size: 30px;
+    }
+
+    nav.qaCategories a.qaCategoryLink {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    div.qaContainer {
+        width: 85%;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    div.qaHeading h1 {
+        font-size: 50px;
+    }
+
+}
