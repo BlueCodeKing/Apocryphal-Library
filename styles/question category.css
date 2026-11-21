@@ -1,0 +1,57 @@
+div.categoryContainer {
+    width: 90%;
+    margin: 20px auto;
+    border: solid 4px navy;
+    border-radius: 14px;
+    max-width: 1200px;
+}
+
+div.categoryContainer > p:first-child {
+    background-color: navy;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.categoryContainer div {
+    background-color: blue;
+    border-bottom: solid 4px navy;
+    border-top: 0;
+    transition: .35s;
+}
+
+div.categoryContainer div:hover {
+    background-color: dodgerblue;
+}
+
+div.categoryContainer div:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
+}
+
+div.categoryContainer div a {
+    color: white;
+    text-decoration: none;
+}
+
+div.categoryContainer div a p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 575px) {
+
+    div.categoryContainer > p:first-child {
+        font-size: 30px;
+    }
+
+    div.categoryContainer div a p {
+        font-size: 30px;
+    }
+
+}
